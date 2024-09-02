@@ -26,7 +26,7 @@ Para garantizar que no haya conflictos durante la instalación de Asterisk, es r
 
 `nano /etc/selinux/config`
 
-Cambiar la política de acción de aplicada a deshabilitada
+Cambiar la política de acción de aplicada a deshabilitada.
 
 `SELINUX=disabled`
 
@@ -56,11 +56,11 @@ Se instalaron bibliotecas necesarias para que Asterisk funcione con el comando:
 ## ##
 **Paso 6: Descarga y extracción del paquete Asterisk**
 
-Nos dirigimos al directorio /usr/src, que es una ubicación estándar en Linux donde se suelen almacenar los archivos fuente (source) de aplicaciones y software a compilar.
+Nos dirigimos al directorio /usr/src, que es una ubicación estándar en Linux donde se suelen almacenar los archivos fuente de aplicaciones y software a compilar.
 
 `cd /usr/src`
 
-se utiliza wget para descargar el archivo comprimido más reciente de Asterisk versión 18 desde el sitio oficial.
+Se utiliza wget para descargar el archivo comprimido más reciente de Asterisk versión 18 desde el sitio oficial.
 
 `wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-18-current.tar.gz`
 
@@ -100,7 +100,7 @@ Luego de completar exitosamente la configuración del software veremos el logo d
 ## ##
 **Paso 9: Compilación y configuración de Asterisk**
 
-Se abre  una interfaz de menú en la qus se puede activar o desactivar diferentes opciones, como codecs, módulos de red, aplicaciones, y otras características específicas de Asterisk con el comando:
+Se abre una interfaz de menú en la qus se puede activar o desactivar diferentes opciones, como codecs, módulos de red, aplicaciones, y otras características específicas de Asterisk con el comando:
 
 `make menuselect`
 
@@ -175,7 +175,7 @@ systemctl enable asterisk.service
 systemctl start asterisk
 systemctl status asterisk
 ```
-Si se ve de la siguiente manera signifa qeu asterisk esta funcionado y lito para usarse.
+Si se ve de la siguiente manera, significa que Asterisk está funcionando y listo para usarse.
 
 ![image](https://github.com/user-attachments/assets/b7dba681-9b51-42f7-a2ab-46e8844b392e)
 
@@ -288,6 +288,7 @@ exten => 200,n,Hangup()
 
 ## ##
 **Paso 13: Configuración del Firewall**
+
 Para permitir que Asterisk funcione correctamente y acepte llamadas, es necesario configurar el firewall para permitir el tráfico en los puertos que utiliza con los comandos:
 ```
 sudo firewall-cmd --zone=public --add-port=5060/udp --permanent
