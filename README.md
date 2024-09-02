@@ -1,6 +1,6 @@
 # ![image](https://github.com/user-attachments/assets/c8e698d0-d2e4-4c6c-a0ea-885d90addfb6)
 
-## Procedimiento Seguido para Configurar el DNS en CentOS Stream 9
+## Procedimiento Seguido para configurar una central telefónica en CentOS Stream 9
 				
 ## ##
 **Paso 1: Actualizar**
