@@ -48,5 +48,35 @@ Se instalaron bibliotecas necesarias para que Asterisk funcione con el comando:
 
 `sudo dnf install libxml2-devel sqlite-devel libuuid-devel -y`
 
+## ##
+**Paso 6: Descarga y extracción del paquete Asterisk**
+
+Nos dirigimos al directorio /usr/src, que es una ubicación estándar en Linux donde se suelen almacenar los archivos fuente (source) de aplicaciones y software a compilar.
+
+`cd /usr/src`
+
+se utiliza wget para descargar el archivo comprimido más reciente de Asterisk versión 18 desde el sitio oficial.
+
+`wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-18-current.tar.gz`
+
+Este comando utiliza tar para descomprimir el archivo descargado. 
+
+`tar zxvf asterisk-18-current.tar.gz`
+
+Después de la extracción, se elimina el archivo tarball comprimido para liberar espacio en el disco y mantener el entorno limpio. 
+
+`rm -rf asterisk-18-current.tar.gz`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
